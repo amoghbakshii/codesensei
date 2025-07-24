@@ -320,13 +320,13 @@ const AnalyzerSection = () => {
     setError("");
 
     try {
-      const response = await fetch("http://localhost:8000/analyze", {
-        method: "POST",
-
-        headers: { "Content-Type": "application/json" },
-
-        body: JSON.stringify({ code, language }),
-      });
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/analyze`, {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({ code, language }),
+});
 
       if (!response.ok) {
         throw new Error(`The server responded with status: ${response.status}`);
