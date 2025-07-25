@@ -1,7 +1,4 @@
 <div align="center">
-  <a href="#">
-    <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="150px" />
-  </a>
   <h1>
     CodeSensei🥋
   </h1>
